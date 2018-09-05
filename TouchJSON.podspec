@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
     s.license = 'Mozilla Public License v2'
     s.summary = 'TouchJSON'
     s.homepage = ''
-    s.documentation_url = ''
+    s.documentation_url = 'https://github.com/DevAppDev/TouchJSON'
     s.author   = { 'TouchJSON' => 'touchJSON@gmail.com' }
     s.source = { :git => 'https://github.com/DevAppDev/TouchJSON', :tag => s.version }
     s.ios.deployment_target = '8.0'
