@@ -13,4 +13,14 @@ Pod::Spec.new do |s|
     s.source_files = [
         'Source/*.{h,m}',
     ]
+
+    s.subspec 'JSON' do |core|
+      core.source_files = 'Source/JSON/*.{h,m}'
+      core.public_header_files = 'Source/JSON/*.{h}'
+    end
+
+   s.subspec 'Extensions' do |core|
+      core.source_files = 'Source/Extensions/*.{h,m}'
+      core.public_header_files = 'Source/Extensions/*.{h}'
+    end
 end
