@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
     s.version = '1.1'
     s.license = 'Mozilla Public License v2'
     s.summary = 'TouchJSON'
-    s.homepage = ''
+    s.homepage = 'https://github.com/DevAppDev/TouchJSON'
     s.documentation_url = 'https://github.com/DevAppDev/TouchJSON'
     s.author   = { 'TouchJSON' => 'touchJSON@gmail.com' }
     s.source = { :git => 'https://github.com/DevAppDev/TouchJSON', :tag => s.version }
