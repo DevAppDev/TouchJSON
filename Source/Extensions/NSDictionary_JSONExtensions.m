@@ -1,9 +1,9 @@
 //
-//  NSDictionary_JSONExtensions.h
-//  TouchCode
+//  NSDictionary_JSONExtensions.m
+//  TouchJSON
 //
 //  Created by Jonathan Wight on 04/17/08.
-//  Copyright 2008 toxicsoftware.com. All rights reserved.
+//  Copyright (c) 2008 Jonathan Wight
 //
 //  Permission is hereby granted, free of charge, to any person
 //  obtaining a copy of this software and associated documentation
@@ -27,11 +27,15 @@
 //  OTHER DEALINGS IN THE SOFTWARE.
 //
 
-#import <Foundation/Foundation.h>
+#import "NSDictionary_JSONExtensions.h"
 
-@interface NSDictionary (NSDictionary_JSONExtensions)
+#import "CJSONDeserializer.h"
 
-+ (id)dictionaryWithJSONData:(NSData *)inData error:(NSError **)outError;
-+ (id)dictionaryWithJSONString:(NSString *)inJSON error:(NSError **)outError;
+@implementation NSDictionary (NSDictionary_JSONExtensions)
+
++ (id)dictionaryWithJSONData:(NSData *)inData error:(NSError **)outError
+{
+return([[CJSONDeserializer deserializer] deserialize:inData error:outError]);
+}
 
 @end
